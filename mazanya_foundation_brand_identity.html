@@ -1,0 +1,647 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body { font-family: 'Nunito', sans-serif; }
+
+  .section-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+    padding-left: 2px;
+  }
+
+  .brand-section {
+    margin-bottom: 40px;
+  }
+
+  /* ===== LOGO SECTION ===== */
+  .logo-showcase {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .logo-tile {
+    border-radius: 16px;
+    padding: 36px 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 220px;
+  }
+
+  .logo-tile.light-bg { background: #FFF8F5; border: 0.5px solid #f0d8cf; }
+  .logo-tile.dark-bg { background: #1a0a14; }
+  .logo-tile.rose-bg { background: linear-gradient(135deg, #8b1a4a 0%, #c0396c 100%); }
+
+  .logo-mark {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .logo-icon {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+  }
+
+  .logo-text-block { display: flex; flex-direction: column; }
+
+  .logo-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+  }
+
+  .logo-tagline {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 8.5px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+
+  .logo-name.dark { color: #5c1033; }
+  .logo-tagline.dark { color: #b05078; }
+
+  .logo-name.light { color: #fff; }
+  .logo-tagline.light { color: rgba(255,255,255,0.72); }
+
+  /* ===== VISITING CARD ===== */
+  .cards-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .vcard {
+    width: 340px;
+    height: 190px;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .vcard-front {
+    background: #fff;
+    border: 0.5px solid #e8c8d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px 24px 18px;
+  }
+
+  .vcard-front .accent-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8b1a4a 0%, #d4527a 50%, #e8956a 100%);
+  }
+
+  .vcard-front .bottom-petal {
+    position: absolute;
+    bottom: -30px; right: -30px;
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fde8f0 0%, transparent 70%);
+    opacity: 0.6;
+  }
+
+  .vcard-front .top-circle {
+    position: absolute;
+    top: -20px; left: -20px;
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fde8f0 0%, transparent 70%);
+    opacity: 0.5;
+  }
+
+  .vcard-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #5c1033;
+    line-height: 1.2;
+  }
+
+  .vcard-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #b05078;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .vcard-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .vcard-detail {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 10px;
+    color: #6b3350;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+  }
+
+  .vcard-detail .dot {
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: #c0396c;
+    flex-shrink: 0;
+  }
+
+  .vcard-back {
+    background: linear-gradient(145deg, #6b0f3a 0%, #a02558 50%, #c05070 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .vcard-back .logo-name { color: #fff; font-size: 20px; }
+  .vcard-back .logo-tagline { color: rgba(255,255,255,0.65); font-size: 8px; letter-spacing: 2.5px; }
+
+  .vcard-back .mission-text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  .vcard-back .divider {
+    width: 40px; height: 1px;
+    background: rgba(255,255,255,0.25);
+    margin: 2px 0;
+  }
+
+  /* ===== LETTERHEAD ===== */
+  .letterhead {
+    background: #fff;
+    border: 0.5px solid #e8c8d8;
+    border-radius: 14px;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .lh-header {
+    background: linear-gradient(135deg, #6b0f3a 0%, #9b2354 60%, #c05070 100%);
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lh-header::after {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+  }
+
+  .lh-header::before {
+    content: '';
+    position: absolute;
+    bottom: -30px; right: 80px;
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+
+  .lh-header-right {
+    text-align: right;
+    position: relative;
+    z-index: 1;
+  }
+
+  .lh-contact-line {
+    font-size: 9.5px;
+    color: rgba(255,255,255,0.65);
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+
+  .lh-stripe {
+    height: 4px;
+    background: linear-gradient(90deg, #e8956a 0%, #d4527a 35%, #8b1a4a 70%, #5c1033 100%);
+  }
+
+  .lh-body {
+    padding: 32px 40px 0;
+  }
+
+  .lh-date-line {
+    font-size: 11px;
+    color: #b05078;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  .lh-salutation {
+    font-size: 13px;
+    color: #3a1020;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .lh-body-text {
+    font-size: 12px;
+    color: #6b3350;
+    line-height: 1.85;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+
+  .lh-placeholder-line {
+    height: 8px;
+    background: #f5e6ee;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .lh-placeholder-line.short { width: 60%; }
+  .lh-placeholder-line.medium { width: 85%; }
+  .lh-placeholder-line.full { width: 100%; }
+
+  .lh-footer {
+    margin-top: 28px;
+    padding: 18px 40px;
+    background: #fdf3f7;
+    border-top: 0.5px solid #f0d0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .lh-footer-tag {
+    font-size: 8.5px;
+    color: #b05078;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .lh-footer-web {
+    font-size: 9px;
+    color: #b05078;
+    letter-spacing: 0.5px;
+  }
+
+  .lh-footer-dots {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .lh-footer-dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+
+  /* Color palette display */
+  .palette-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .swatch {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .swatch-label {
+    font-size: 9px;
+    color: var(--color-text-secondary);
+    margin-top: 5px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .swatch-wrap { display: flex; flex-direction: column; align-items: center; }
+</style>
+
+<h2 class="sr-only" style="position:absolute;left:-9999px;">Mazanya Foundation Brand Identity — Logo, Visiting Card, and Letterhead</h2>
+
+<div style="padding: 2rem 0;">
+
+  <!-- ===== LOGO ===== -->
+  <div class="brand-section">
+    <div class="section-label">01 — Logo Mark</div>
+    <div class="logo-showcase">
+
+      <!-- Light version -->
+      <div class="logo-tile light-bg">
+        <div class="logo-mark">
+          <div class="logo-icon">
+            <svg width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8b1a4a"/>
+                  <stop offset="100%" stop-color="#d4527a"/>
+                </linearGradient>
+                <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#d4527a"/>
+                  <stop offset="100%" stop-color="#e8956a"/>
+                </linearGradient>
+              </defs>
+              <!-- Lotus petals / female form -->
+              <ellipse cx="26" cy="34" rx="10" ry="14" fill="url(#g1)" opacity="0.9"/>
+              <ellipse cx="16" cy="26" rx="7" ry="12" fill="url(#g1)" opacity="0.6" transform="rotate(-30 16 26)"/>
+              <ellipse cx="36" cy="26" rx="7" ry="12" fill="url(#g2)" opacity="0.6" transform="rotate(30 36 26)"/>
+              <!-- Heart / child at top -->
+              <circle cx="26" cy="14" r="6" fill="url(#g2)" opacity="0.95"/>
+              <circle cx="22.5" cy="11.5" r="3.5" fill="url(#g2)" opacity="0.85"/>
+              <circle cx="29.5" cy="11.5" r="3.5" fill="url(#g2)" opacity="0.85"/>
+              <!-- Star accent -->
+              <circle cx="38" cy="10" r="2" fill="#e8956a" opacity="0.8"/>
+              <circle cx="42" cy="16" r="1.2" fill="#d4527a" opacity="0.5"/>
+              <circle cx="10" cy="16" r="1.5" fill="#8b1a4a" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="logo-text-block">
+            <div class="logo-name dark">Mazanya<br>Foundation</div>
+            <div class="logo-tagline dark">Empowering Girls · Women · Futures</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dark version -->
+      <div class="logo-tile dark-bg">
+        <div class="logo-mark">
+          <div class="logo-icon">
+            <svg width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e8956a"/>
+                  <stop offset="100%" stop-color="#f4c0a0"/>
+                </linearGradient>
+                <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#d4527a"/>
+                  <stop offset="100%" stop-color="#f09cb8"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="26" cy="34" rx="10" ry="14" fill="url(#g4)" opacity="0.9"/>
+              <ellipse cx="16" cy="26" rx="7" ry="12" fill="url(#g4)" opacity="0.6" transform="rotate(-30 16 26)"/>
+              <ellipse cx="36" cy="26" rx="7" ry="12" fill="url(#g3)" opacity="0.6" transform="rotate(30 36 26)"/>
+              <circle cx="26" cy="14" r="6" fill="url(#g3)" opacity="0.95"/>
+              <circle cx="22.5" cy="11.5" r="3.5" fill="url(#g3)" opacity="0.85"/>
+              <circle cx="29.5" cy="11.5" r="3.5" fill="url(#g3)" opacity="0.85"/>
+              <circle cx="38" cy="10" r="2" fill="#f4c0a0" opacity="0.8"/>
+              <circle cx="42" cy="16" r="1.2" fill="#f09cb8" opacity="0.5"/>
+              <circle cx="10" cy="16" r="1.5" fill="#e8956a" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="logo-text-block">
+            <div class="logo-name light">Mazanya<br>Foundation</div>
+            <div class="logo-tagline light">Empowering Girls · Women · Futures</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Icon only -->
+      <div class="logo-tile rose-bg" style="min-width:120px; flex:0; padding: 28px 32px;">
+        <svg width="58" height="58" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="26" cy="34" rx="10" ry="14" fill="rgba(255,255,255,0.9)"/>
+          <ellipse cx="16" cy="26" rx="7" ry="12" fill="rgba(255,255,255,0.65)" transform="rotate(-30 16 26)"/>
+          <ellipse cx="36" cy="26" rx="7" ry="12" fill="rgba(255,220,200,0.7)" transform="rotate(30 36 26)"/>
+          <circle cx="26" cy="14" r="6" fill="rgba(255,220,200,0.95)"/>
+          <circle cx="22.5" cy="11.5" r="3.5" fill="rgba(255,220,200,0.9)"/>
+          <circle cx="29.5" cy="11.5" r="3.5" fill="rgba(255,220,200,0.9)"/>
+          <circle cx="38" cy="10" r="2" fill="rgba(255,255,255,0.7)"/>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== COLOR PALETTE ===== -->
+  <div class="brand-section">
+    <div class="section-label">02 — Brand Palette</div>
+    <div class="palette-row">
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#5c1033;"></div>
+        <div class="swatch-label">#5C1033<br>Deep Rose</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#8b1a4a;"></div>
+        <div class="swatch-label">#8B1A4A<br>Crimson</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#c0396c;"></div>
+        <div class="swatch-label">#C0396C<br>Bloom</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#d4527a;"></div>
+        <div class="swatch-label">#D4527A<br>Petal</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#e8956a;"></div>
+        <div class="swatch-label">#E8956A<br>Sunrise</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#f5cba7;"></div>
+        <div class="swatch-label">#F5CBA7<br>Warmth</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#FFF8F5; border: 0.5px solid #e8c8d8;"></div>
+        <div class="swatch-label">#FFF8F5<br>Ivory</div>
+      </div>
+      <div class="swatch-wrap">
+        <div class="swatch" style="background:#1a0a14;"></div>
+        <div class="swatch-label">#1A0A14<br>Midnight</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== VISITING CARDS ===== -->
+  <div class="brand-section">
+    <div class="section-label">03 — Visiting Card</div>
+    <div class="cards-row">
+
+      <!-- Front -->
+      <div>
+        <div style="font-size:10px; color:var(--color-text-secondary); letter-spacing:1px; margin-bottom:8px; font-family:'Nunito',sans-serif;">FRONT</div>
+        <div class="vcard vcard-front">
+          <div class="accent-bar"></div>
+          <div class="top-circle"></div>
+          <div class="bottom-petal"></div>
+
+          <div style="display:flex; align-items:center; gap:10px; position:relative; z-index:1; margin-top:6px;">
+            <svg width="32" height="32" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8b1a4a"/>
+                  <stop offset="100%" stop-color="#d4527a"/>
+                </linearGradient>
+                <linearGradient id="cg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#d4527a"/>
+                  <stop offset="100%" stop-color="#e8956a"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="26" cy="34" rx="10" ry="14" fill="url(#cg1)" opacity="0.9"/>
+              <ellipse cx="16" cy="26" rx="7" ry="12" fill="url(#cg1)" opacity="0.6" transform="rotate(-30 16 26)"/>
+              <ellipse cx="36" cy="26" rx="7" ry="12" fill="url(#cg2)" opacity="0.6" transform="rotate(30 36 26)"/>
+              <circle cx="26" cy="14" r="6" fill="url(#cg2)" opacity="0.95"/>
+              <circle cx="22.5" cy="11.5" r="3.5" fill="url(#cg2)" opacity="0.85"/>
+              <circle cx="29.5" cy="11.5" r="3.5" fill="url(#cg2)" opacity="0.85"/>
+            </svg>
+            <div>
+              <div style="font-family:'Playfair Display',serif; font-size:13px; font-weight:700; color:#5c1033; line-height:1.1;">Mazanya Foundation</div>
+              <div style="font-size:7.5px; color:#b05078; letter-spacing:1.5px; text-transform:uppercase; margin-top:2px; font-family:'Nunito',sans-serif;">Empowering Girls · Women · Futures</div>
+            </div>
+          </div>
+
+          <div style="position:relative; z-index:1;">
+            <div class="vcard-name">Dr. Priya Sharma</div>
+            <div class="vcard-title">Executive Director &amp; Founder</div>
+          </div>
+
+          <div class="vcard-details" style="position:relative; z-index:1;">
+            <div class="vcard-detail"><div class="dot"></div>+91 98765 43210</div>
+            <div class="vcard-detail"><div class="dot"></div>director@mazanyafoundation.org</div>
+            <div class="vcard-detail"><div class="dot"></div>www.mazanyafoundation.org</div>
+            <div class="vcard-detail"><div class="dot"></div>New Delhi · Mumbai · Chandigarh</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back -->
+      <div>
+        <div style="font-size:10px; color:var(--color-text-secondary); letter-spacing:1px; margin-bottom:8px; font-family:'Nunito',sans-serif;">BACK</div>
+        <div class="vcard vcard-back">
+          <svg width="44" height="44" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="26" cy="34" rx="10" ry="14" fill="rgba(255,255,255,0.8)"/>
+            <ellipse cx="16" cy="26" rx="7" ry="12" fill="rgba(255,255,255,0.5)" transform="rotate(-30 16 26)"/>
+            <ellipse cx="36" cy="26" rx="7" ry="12" fill="rgba(255,200,160,0.6)" transform="rotate(30 36 26)"/>
+            <circle cx="26" cy="14" r="6" fill="rgba(255,200,160,0.9)"/>
+            <circle cx="22.5" cy="11.5" r="3.5" fill="rgba(255,200,160,0.8)"/>
+            <circle cx="29.5" cy="11.5" r="3.5" fill="rgba(255,200,160,0.8)"/>
+          </svg>
+          <div style="font-family:'Playfair Display',serif; font-size:19px; font-weight:700; color:#fff; text-align:center; line-height:1.2;">Mazanya<br>Foundation</div>
+          <div class="divider"></div>
+          <div style="font-size:8px; color:rgba(255,255,255,0.55); letter-spacing:2px; text-transform:uppercase; text-align:center; font-family:'Nunito',sans-serif;">Girl Child · Women · Wellbeing</div>
+          <div style="font-size:8px; color:rgba(255,255,255,0.4); letter-spacing:1px; text-align:center; font-family:'Nunito',sans-serif; margin-top:2px;">Across All Sectors</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== LETTERHEAD ===== -->
+  <div class="brand-section">
+    <div class="section-label">04 — Letterhead</div>
+    <div class="letterhead">
+
+      <div class="lh-header">
+        <div style="display:flex; align-items:center; gap:14px; position:relative; z-index:1;">
+          <svg width="48" height="48" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="26" cy="34" rx="10" ry="14" fill="rgba(255,255,255,0.85)"/>
+            <ellipse cx="16" cy="26" rx="7" ry="12" fill="rgba(255,255,255,0.55)" transform="rotate(-30 16 26)"/>
+            <ellipse cx="36" cy="26" rx="7" ry="12" fill="rgba(255,200,160,0.65)" transform="rotate(30 36 26)"/>
+            <circle cx="26" cy="14" r="6" fill="rgba(255,200,160,0.92)"/>
+            <circle cx="22.5" cy="11.5" r="3.5" fill="rgba(255,200,160,0.82)"/>
+            <circle cx="29.5" cy="11.5" r="3.5" fill="rgba(255,200,160,0.82)"/>
+            <circle cx="38" cy="10" r="1.5" fill="rgba(255,255,255,0.6)"/>
+          </svg>
+          <div>
+            <div style="font-family:'Playfair Display',serif; font-size:22px; font-weight:700; color:#fff; line-height:1.1;">Mazanya Foundation</div>
+            <div style="font-size:8px; color:rgba(255,255,255,0.6); letter-spacing:2.5px; text-transform:uppercase; margin-top:5px; font-family:'Nunito',sans-serif;">Empowering Girls · Women · Futures</div>
+          </div>
+        </div>
+        <div class="lh-header-right">
+          <div class="lh-contact-line">Regd. Office: 45, Sector 17, Chandigarh — 160 017</div>
+          <div class="lh-contact-line">info@mazanyafoundation.org</div>
+          <div class="lh-contact-line">www.mazanyafoundation.org</div>
+          <div class="lh-contact-line">+91 98765 43210</div>
+        </div>
+      </div>
+
+      <div class="lh-stripe"></div>
+
+      <div class="lh-body">
+        <div class="lh-date-line">Date: ___________________</div>
+        <div class="lh-date-line" style="margin-bottom:16px;">To,<br><strong style="color:#3a1020;">The Recipient Name</strong><br>Designation / Organisation<br>City, State</div>
+        <div class="lh-salutation">Subject: ___________________________________________</div>
+
+        <div class="lh-body-text">Respected Sir / Ma'am,</div>
+
+        <div class="lh-placeholder-line full"></div>
+        <div class="lh-placeholder-line full"></div>
+        <div class="lh-placeholder-line medium"></div>
+        <div style="margin-bottom:10px;"></div>
+        <div class="lh-placeholder-line full"></div>
+        <div class="lh-placeholder-line full"></div>
+        <div class="lh-placeholder-line short"></div>
+
+        <div style="margin-top:24px; margin-bottom:20px;">
+          <div class="lh-body-text">Yours sincerely,</div>
+          <div style="margin-top:28px; border-bottom: 0.5px solid #e8c8d8; width:160px;"></div>
+          <div style="font-family:'Playfair Display',serif; font-size:13px; color:#5c1033; margin-top:6px; font-weight:600;">Dr. Priya Sharma</div>
+          <div style="font-size:10px; color:#b05078; letter-spacing:0.5px; margin-top:2px; font-family:'Nunito',sans-serif;">Executive Director, Mazanya Foundation</div>
+        </div>
+      </div>
+
+      <div class="lh-footer">
+        <div style="display:flex; gap:8px; align-items:center;">
+          <div class="lh-footer-dot" style="background:#8b1a4a;"></div>
+          <div class="lh-footer-dot" style="background:#c0396c;"></div>
+          <div class="lh-footer-dot" style="background:#e8956a;"></div>
+          <div class="lh-footer-tag" style="margin-left:4px;">Girl Child &nbsp;·&nbsp; Women &nbsp;·&nbsp; All Sectors</div>
+        </div>
+        <div class="lh-footer-web">www.mazanyafoundation.org &nbsp;|&nbsp; Regd. Under Societies Act</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TYPOGRAPHY NOTE -->
+  <div class="brand-section" style="margin-bottom:0;">
+    <div class="section-label">05 — Typography</div>
+    <div style="display:flex; gap:24px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:180px; background:var(--color-background-secondary); border-radius:12px; padding:18px 20px;">
+        <div style="font-size:9px; color:var(--color-text-secondary); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:10px; font-family:'Nunito',sans-serif;">Display Font</div>
+        <div style="font-family:'Playfair Display',serif; font-size:26px; color:#5c1033; line-height:1.2;">Mazanya</div>
+        <div style="font-family:'Nunito',sans-serif; font-size:10px; color:var(--color-text-secondary); margin-top:6px; letter-spacing:0.5px;">Playfair Display — Headers, Name, Titles</div>
+      </div>
+      <div style="flex:1; min-width:180px; background:var(--color-background-secondary); border-radius:12px; padding:18px 20px;">
+        <div style="font-size:9px; color:var(--color-text-secondary); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:10px; font-family:'Nunito',sans-serif;">Body Font</div>
+        <div style="font-family:'Nunito',sans-serif; font-size:18px; color:#5c1033; line-height:1.4; font-weight:300;">Empowering<br>every girl.</div>
+        <div style="font-family:'Nunito',sans-serif; font-size:10px; color:var(--color-text-secondary); margin-top:6px; letter-spacing:0.5px;">Nunito — Body, Details, Contact Info</div>
+      </div>
+    </div>
+  </div>
+
+</div>
