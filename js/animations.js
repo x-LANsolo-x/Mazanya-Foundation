@@ -1,35 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ══════════════════════════════════════
-  // 1. CUSTOM CURSOR
-  // ══════════════════════════════════════
-  const dot  = document.getElementById('cursorDot');
-  const ring = document.getElementById('cursorRing');
-  if (dot && ring) {
-    let mx = -200, my = -200, rx = -200, ry = -200;
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-    const updateCursor = () => {
-      dot.style.left  = mx + 'px';
-      dot.style.top   = my + 'px';
-      rx += (mx - rx) * 0.12;
-      ry += (my - ry) * 0.12;
-      ring.style.left = rx + 'px';
-      ring.style.top  = ry + 'px';
-      requestAnimationFrame(updateCursor);
-    };
-    updateCursor();
-    // Expand ring on interactive elements
-    document.querySelectorAll('a,button,.btn,.tilt,.g-card,.orbit-item').forEach(el => {
-      el.addEventListener('mouseenter', () => ring.classList.add('expand'));
-      el.addEventListener('mouseleave', () => ring.classList.remove('expand'));
-    });
-    // Hide off-screen
-    document.addEventListener('mouseleave', () => { dot.style.opacity = 0; ring.style.opacity = 0; });
-    document.addEventListener('mouseenter', () => { dot.style.opacity = 1; ring.style.opacity = 1; });
-  }
-
-  // ══════════════════════════════════════
-  // 2. HERO PARTICLE CANVAS
+  // 1. HERO PARTICLE CANVAS
   // ══════════════════════════════════════
   const canvas = document.getElementById('heroCanvas');
   if (canvas) {
@@ -208,3 +180,45 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+  // ══════════════════════════════════════
+  // 12. SCROLL-DRIVEN CARD CAROUSEL
+  // ══════════════════════════════════════
+  const scTrack = document.getElementById('scTrack');
+  const scRail  = document.getElementById('scRail');
+  const scProgressFill  = document.getElementById('scProgress');
+  const scLabel = document.getElementById('scLabel');
+
+  if (scTrack && scRail) {
+    const CARDS_COUNT = scRail.querySelectorAll('.sc-card').length;
+    const CARD_W      = 360 + 32; // card width + gap (2rem)
+    const VISIBLE_W   = window.innerWidth - 80; // viewport minus padding
+    const MAX_SHIFT   = CARD_W * (CARDS_COUNT - Math.floor(VISIBLE_W / CARD_W));
+
+    window.addEventListener('scroll', () => {
+      const rect = scTrack.getBoundingClientRect();
+      const trackH = scTrack.offsetHeight;
+      const stickyH = window.innerHeight * 0.88; // sc-sticky height
+
+      // How far we've scrolled into the track (0 → 1)
+      const rawProgress = -rect.top / (trackH - stickyH);
+      const progress = Math.max(0, Math.min(1, rawProgress));
+
+      // Translate the rail
+      const shift = progress * MAX_SHIFT;
+      scRail.style.transform = `translateX(-${shift}px)`;
+
+      // Update progress bar
+      if (scProgressFill) scProgressFill.style.width = (progress * 100) + '%';
+
+      // Update label — which card is "active" (centred in view)
+      const activeIdx = Math.min(CARDS_COUNT - 1, Math.floor(progress * CARDS_COUNT));
+      if (scLabel) scLabel.textContent = `${activeIdx + 1} / ${CARDS_COUNT}`;
+
+      // Highlight active card
+      scRail.querySelectorAll('.sc-card').forEach((c, i) => {
+        c.style.opacity = Math.abs(i - activeIdx) <= 1 ? '1' : '0.55';
+        c.style.transform = i === activeIdx ? 'scale(1.03) translateY(-8px)' : '';
+      });
+    }, { passive: true });
+  }

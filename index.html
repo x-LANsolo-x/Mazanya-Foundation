@@ -13,9 +13,7 @@
 <!-- BLOBS -->
 <div class="blob-wrap"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
 
-<!-- CUSTOM CURSOR -->
-<div class="cursor-dot" id="cursorDot"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+
 
 <!-- HEADER -->
 <header>
@@ -171,22 +169,97 @@
   </div>
 </section>
 
-<!-- PROGRAMS PREVIEW -->
-<section class="section" style="background:rgba(18,8,16,.03);">
+<!-- PROGRAMS PREVIEW — Scroll Cards -->
+<section class="section sc-section" id="initiatives">
   <div class="container">
-    <div class="text-center" style="margin-bottom:4rem;">
+    <div class="text-center" style="margin-bottom:5rem;">
       <span class="sec-tag anim up">Our Initiatives</span>
       <h2 class="sec-title anim up d1">Seven Programs,<br><em>One Purpose.</em></h2>
+      <p class="sec-sub text-center anim up d2" style="margin:0 auto;">Targeted, community-driven initiatives creating sustainable and measurable change.</p>
     </div>
-    <div class="grid-3" style="gap:1.5rem;">
-      <div class="prog-card tilt anim up"><div class="prog-num">01</div><div class="prog-card-inner"><div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div><div class="prog-tag">Education</div><h3 class="prog-title">Nanaki Jyot</h3><p class="prog-desc">Lighting Every Girl's Future through quality education, digital literacy, and mentorship.</p><div style="margin-top:1.5rem;"><a href="programs.html#nanaki-jyot" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a></div></div></div>
-      <div class="prog-card tilt anim up d1"><div class="prog-num">02</div><div class="prog-card-inner"><div class="icon-box"><i class="fa-solid fa-dove"></i></div><div class="prog-tag">Leadership</div><h3 class="prog-title">Dhiyaan Di Udaan</h3><p class="prog-desc">Every Daughter Deserves Wings — nurturing confidence, creativity, and future readiness.</p><div style="margin-top:1.5rem;"><a href="programs.html#dhiyaan" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a></div></div></div>
-      <div class="prog-card tilt anim up d2"><div class="prog-num">03</div><div class="prog-card-inner"><div class="icon-box"><i class="fa-solid fa-heart-pulse"></i></div><div class="prog-tag">Health</div><h3 class="prog-title">Swasth Nari</h3><p class="prog-desc">Healthy Women, Strong Communities — promoting women's physical and mental wellness.</p><div style="margin-top:1.5rem;"><a href="programs.html#swasth-nari" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a></div></div></div>
-      <div class="prog-card tilt anim up d1"><div class="prog-num">04</div><div class="prog-card-inner"><div class="icon-box"><i class="fa-solid fa-bolt"></i></div><div class="prog-tag">Empowerment</div><h3 class="prog-title">Project Shakti</h3><p class="prog-desc">Empowered Women Empower Nations — skill development and leadership training.</p><div style="margin-top:1.5rem;"><a href="programs.html#shakti" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a></div></div></div>
-      <div class="prog-card tilt anim up d2"><div class="prog-num">05</div><div class="prog-card-inner"><div class="icon-box"><i class="fa-solid fa-briefcase"></i></div><div class="prog-tag">Enterprise</div><h3 class="prog-title">Her Enterprise</h3><p class="prog-desc">From Ideas to Independence — entrepreneurship, mentorship, and market access.</p><div style="margin-top:1.5rem;"><a href="programs.html#enterprise" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a></div></div></div>
-      <div class="prog-card tilt anim up d3"><div class="prog-num">06</div><div class="prog-card-inner"><div class="icon-box"><i class="fa-solid fa-scale-balanced"></i></div><div class="prog-tag">Rights</div><h3 class="prog-title">Nari Samman</h3><p class="prog-desc">Dignity is Every Woman's Right — awareness of women's rights, safety, and equality.</p><div style="margin-top:1.5rem;"><a href="programs.html#samman" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a></div></div></div>
+  </div>
+
+  <!-- Sticky scroll track -->
+  <div class="sc-track-wrap" id="scTrack">
+    <div class="sc-sticky">
+      <div class="sc-cards-viewport">
+        <div class="sc-cards-rail" id="scRail">
+
+          <a href="programs.html#nanaki-jyot" class="sc-card sc-dark">
+            <div class="sc-num">01</div>
+            <div class="sc-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="sc-tag">Education</div>
+            <h3 class="sc-title">Nanaki Jyot</h3>
+            <p class="sc-desc">Lighting Every Girl's Future through quality education, digital literacy, and mentorship.</p>
+            <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="programs.html#dhiyaan" class="sc-card sc-rose">
+            <div class="sc-num">02</div>
+            <div class="sc-icon"><i class="fa-solid fa-dove"></i></div>
+            <div class="sc-tag">Leadership</div>
+            <h3 class="sc-title">Dhiyaan Di Udaan</h3>
+            <p class="sc-desc">Every Daughter Deserves Wings — nurturing confidence, creativity, and future readiness.</p>
+            <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="programs.html#swasth-nari" class="sc-card sc-glass">
+            <div class="sc-num">03</div>
+            <div class="sc-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="sc-tag">Health</div>
+            <h3 class="sc-title">Swasth Nari</h3>
+            <p class="sc-desc">Healthy Women, Strong Communities — promoting physical and mental wellness for women.</p>
+            <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="programs.html#shakti" class="sc-card sc-dark">
+            <div class="sc-num">04</div>
+            <div class="sc-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="sc-tag">Empowerment</div>
+            <h3 class="sc-title">Project Shakti</h3>
+            <p class="sc-desc">Empowered Women Empower Nations — skill development and leadership training programs.</p>
+            <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="programs.html#enterprise" class="sc-card sc-rose">
+            <div class="sc-num">05</div>
+            <div class="sc-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="sc-tag">Enterprise</div>
+            <h3 class="sc-title">Her Enterprise</h3>
+            <p class="sc-desc">From Ideas to Independence — entrepreneurship, mentorship, and market access for women.</p>
+            <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="programs.html#samman" class="sc-card sc-glass">
+            <div class="sc-num">06</div>
+            <div class="sc-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <div class="sc-tag">Rights</div>
+            <h3 class="sc-title">Nari Samman</h3>
+            <p class="sc-desc">Dignity is Every Woman's Right — awareness of rights, safety, equality and social dignity.</p>
+            <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+          <a href="programs.html#muskaan" class="sc-card sc-dark">
+            <div class="sc-num">07</div>
+            <div class="sc-icon"><i class="fa-solid fa-children"></i></div>
+            <div class="sc-tag">Child Welfare</div>
+            <h3 class="sc-title">Project Muskaan</h3>
+            <p class="sc-desc">Every Child Matters — child welfare, nutrition, education, and holistic development support.</p>
+            <div class="sc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+
+        </div>
+      </div>
+      <!-- Progress bar -->
+      <div class="sc-progress-wrap">
+        <div class="sc-progress-bar"><div class="sc-progress-fill" id="scProgress"></div></div>
+        <span class="sc-progress-label" id="scLabel">1 / 7</span>
+      </div>
     </div>
-    <div class="text-center anim up" style="margin-top:3rem;">
+  </div>
+
+  <div class="container">
+    <div class="text-center" style="margin-top:3rem;">
       <a href="programs.html" class="btn btn-primary mag">View All 7 Programs</a>
     </div>
   </div>
