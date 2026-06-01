@@ -61,6 +61,7 @@ pages = {
   <section class="bento-section container">
     <div class="bento-grid">
       <div class="bento-box bento-large bg-indigo">
+        <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Vision">
         <span class="bento-tag">Vision</span>
         <h3 class="bento-title">A Future of Equality</h3>
         <p class="bento-desc">To create a world where every woman and child lives with dignity, opportunity, equality, and hope.</p>
@@ -101,6 +102,7 @@ pages = {
         <p class="bento-desc">We focus on long-term impact and community empowerment.</p>
       </div>
       <div class="bento-box bento-wide bg-coral">
+        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Community">
         <span class="bento-tag">Founder Message</span>
         <h3 class="bento-title" style="font-size: 2rem;">Every great movement begins with a vision.</h3>
         <p class="bento-desc">Mazanya Foundation was established with the aspiration of creating opportunities for women, girls, and children to learn, lead, and thrive. We invite volunteers, institutions, researchers, professionals, and organizations to join us in building a future rooted in dignity, equality, and empowerment. Together, we can transform lives and communities.</p>
@@ -132,6 +134,7 @@ pages = {
         <p class="bento-desc">Swasth Nari promotes awareness regarding women’s physical, mental, reproductive, and nutritional health.</p>
       </div>
       <div class="bento-box bento-wide">
+        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Empowerment">
         <span class="bento-tag" style="color: var(--indigo);">Empowerment</span>
         <h3 class="bento-title" style="font-size: 2.5rem;">Project Shakti</h3>
         <p class="bento-desc">Project Shakti supports women through skill development, financial literacy, leadership training, and community engagement initiatives.</p>
@@ -147,6 +150,7 @@ pages = {
         <p class="bento-desc">Nari Samman works toward promoting awareness of women’s rights, equality, safety, and social dignity.</p>
       </div>
       <div class="bento-box bento-wide bg-indigo">
+        <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Children">
         <span class="bento-tag">Child Welfare</span>
         <h3 class="bento-title" style="font-size: 2.5rem;">Project Muskaan</h3>
         <p class="bento-desc">Project Muskaan focuses on child welfare, education support, nutrition awareness, and holistic child development.</p>
@@ -163,6 +167,7 @@ pages = {
   <section class="bento-section container">
     <div class="bento-grid">
       <div class="bento-box bento-large bg-coral">
+        <img src="https://images.unsplash.com/photo-1593113580332-ceb47bfbf6ca?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Volunteer">
         <span class="bento-tag">Join Us</span>
         <h3 class="bento-title">Volunteer Opportunities</h3>
         <p class="bento-desc">• Campus Ambassador: Represent Mazanya Foundation in your institution.<br>• Community Volunteer: Support awareness and outreach activities.<br>• Research Volunteer: Assist in surveys, studies, and publications.<br>• Content Creator: Develop educational and awareness content.<br>• Graphic Designer: Design social media and campaign creatives.<br>• Social Media Volunteer: Support digital engagement and community building.<br>• Fundraising Volunteer: Help connect donors and partners with our mission.<br>• Event Volunteer: Assist in organizing awareness programs and events.</p>
@@ -184,6 +189,7 @@ pages = {
   <section class="bento-section container">
     <div class="bento-grid">
       <div class="bento-box bento-large bg-dark">
+        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Impact">
         <span class="bento-tag">Make an Impact</span>
         <h3 class="bento-title">Why Donate?</h3>
         <p class="bento-desc">• Support Girl Child Education<br>• Support Women Leadership Programs<br>• Support Health Awareness Campaigns<br>• Support Entrepreneurship Development<br>• Support Community Outreach Activities<br>• Support Research and Social Innovation</p>
@@ -216,6 +222,7 @@ pages = {
         <p class="bento-desc">• Women Empowerment<br>• Girl Child Education<br>• Health and Nutrition<br>• Child Development<br>• Entrepreneurship<br>• Gender Equality<br>• Rural Development<br>• Community Wellbeing<br>• Social Innovation</p>
       </div>
       <div class="bento-box bento-wide bg-indigo">
+        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Research">
         <span class="bento-tag">Join Us</span>
         <h3 class="bento-title" style="font-size: 2.5rem;">Research Collaborations</h3>
         <p class="bento-desc">Researchers, academicians, students, professionals, and institutions are invited to collaborate with Mazanya Foundation in generating knowledge that drives positive change.</p>
@@ -237,6 +244,7 @@ pages = {
         <p class="bento-desc">• Women’s Health Survey<br>• Girl Child Education Survey<br>• Women Entrepreneurship Survey<br>• Community Development Survey<br>• Child Wellbeing Survey<br>• Leadership Development Survey</p>
       </div>
       <div class="bento-box bento-wide">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Community">
         <span class="bento-tag" style="color: var(--indigo);">Your Voice</span>
         <h3 class="bento-title" style="font-size: 2.5rem;">Participate</h3>
         <p class="bento-desc">Your voice matters. By participating in our surveys, you contribute to building data-driven solutions that support communities and inform future initiatives.</p>
@@ -253,6 +261,7 @@ pages = {
   <section class="bento-section container">
     <div class="bento-grid">
       <div class="bento-box bento-tall bg-dark">
+        <img src="https://images.unsplash.com/photo-1554200876-56c2f25224fa?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Contact">
         <span class="bento-tag">Reach Out</span>
         <h3 class="bento-title">Contact Info</h3>
         <p class="bento-desc" style="margin-top: 2rem;"><strong>Email</strong><br>info@mazanyafoundation.org</p>
@@ -261,6 +270,7 @@ pages = {
         <p class="bento-desc"><strong>Working Hours</strong><br>Monday – Saturday<br>9:00 AM – 6:00 PM</p>
       </div>
       <div class="bento-box bento-wide bg-coral">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop" class="img-reveal" alt="Social">
         <span class="bento-tag">Social</span>
         <h3 class="bento-title" style="font-size: 2rem;">Connect With Us</h3>
         <p class="bento-desc">Follow Mazanya Foundation on social media to stay informed about upcoming programs, opportunities, research, and community initiatives. Together, we can build a future filled with opportunity, dignity, and hope.</p>
