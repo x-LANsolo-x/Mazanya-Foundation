@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | MAZANYA Foundation</title>
+  <link rel="icon" href="mazanya_logo_icon-2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .donate-amount-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:1.5rem;}
+    .amount-btn{padding:1.2rem;border:2px solid var(--ink-20);border-radius:12px;text-align:center;cursor:pointer;transition:all .3s var(--ease);background:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.1rem;color:var(--ink);}
+    .amount-btn:hover,.amount-btn.active{border-color:var(--rose);background:rgba(192,57,108,.06);color:var(--rose);}
+    @media(max-width:768px){.donate-amount-grid{grid-template-columns:repeat(2,1fr);}}
+  </style>
+</head>
+<body>
+<div class="blob-wrap"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo"><img src="mazanya_logo_icon-2.png" alt="MAZANYA"><span>MAZANYA</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li><li><a href="research.html">Research</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="donate.html" class="btn btn-primary mag">Donate Now</a></div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="blob-wrap page-hero-blobs"><div class="blob b1" style="opacity:.15;"></div></div>
+  <div class="container">
+    <span class="sec-tag anim up" style="background:rgba(255,255,255,.15);color:rgba(255,255,255,.9);">Support Us</span>
+    <h1 class="anim up d1">Donate &amp;<br>Transform Lives</h1>
+    <p class="crumbs anim up d2"><a href="index.html">Home</a> / Donate</p>
+  </div>
+</section>
+
+<!-- WHY DONATE -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:5rem;margin-bottom:6rem;">
+      <div>
+        <span class="sec-tag anim up">Your Impact</span>
+        <h2 class="sec-title anim up d1">Every Rupee Creates<em>Real Change.</em></h2>
+        <div class="divider anim up d2"></div>
+        <p class="anim up d2" style="color:var(--ink-60);line-height:1.9;margin-bottom:1.5rem;">Your donation directly funds our programs that empower women, educate girls, and support children across underserved communities in India. We maintain full financial transparency.</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:1rem;" class="anim up d3">
+          <li style="display:flex;gap:1rem;align-items:flex-start;"><span style="width:40px;height:40px;background:var(--grad-h);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.9rem;flex-shrink:0;"><i class="fa-solid fa-book-open"></i></span><div><strong>₹500</strong> provides educational materials for one girl for a year</div></li>
+          <li style="display:flex;gap:1rem;align-items:flex-start;"><span style="width:40px;height:40px;background:var(--grad-h);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.9rem;flex-shrink:0;"><i class="fa-solid fa-stethoscope"></i></span><div><strong>₹1,000</strong> covers one woman's health check-up and consultation</div></li>
+          <li style="display:flex;gap:1rem;align-items:flex-start;"><span style="width:40px;height:40px;background:var(--grad-h);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.9rem;flex-shrink:0;"><i class="fa-solid fa-laptop"></i></span><div><strong>₹5,000</strong> funds a month of digital literacy training for a girl</div></li>
+          <li style="display:flex;gap:1rem;align-items:flex-start;"><span style="width:40px;height:40px;background:var(--grad-h);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.9rem;flex-shrink:0;"><i class="fa-solid fa-people-group"></i></span><div><strong>₹25,000</strong> runs a full community empowerment workshop</div></li>
+        </ul>
+      </div>
+      <div class="anim right">
+        <div class="g-card tilt">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:2rem;margin-bottom:2rem;">Make a Donation</h3>
+          <div class="donate-amount-grid">
+            <button class="amount-btn active">₹500</button>
+            <button class="amount-btn">₹1,000</button>
+            <button class="amount-btn">₹5,000</button>
+            <button class="amount-btn">Custom</button>
+          </div>
+          <div class="form-group"><label class="form-label">Amount (₹)</label><input type="number" class="form-control" value="500" placeholder="Enter amount"></div>
+          <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-control" placeholder="Your full name"></div>
+          <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-control" placeholder="your@email.com"></div>
+          <div class="form-group"><label class="form-label">Donate Towards</label><select class="form-control"><option>General Fund</option><option>Nanaki Jyot (Education)</option><option>Swasth Nari (Health)</option><option>Her Enterprise (Entrepreneurship)</option><option>Project Muskaan (Child Welfare)</option></select></div>
+          <button class="btn btn-primary mag" style="width:100%;">Proceed to Payment <i class="fa-solid fa-lock"></i></button>
+          <p style="text-align:center;font-size:.8rem;color:var(--ink-60);margin-top:1rem;"><i class="fa-solid fa-shield-halved"></i> 100% Secure. Transparent. Tax Deductible.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMPACT NUMBERS -->
+    <div class="stats-strip" style="border-radius:20px;">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item"><span class="stat-num count-up" data-target="100" data-suffix="%">0%</span><span class="stat-lbl">Funds go to Programs</span></div>
+          <div class="stat-item"><span class="stat-num count-up" data-target="5000" data-suffix="+">0</span><span class="stat-lbl">Beneficiaries</span></div>
+          <div class="stat-item"><span class="stat-num count-up" data-target="7">0</span><span class="stat-lbl">Active Programs</span></div>
+          <div class="stat-item"><span class="stat-num count-up" data-target="12" data-suffix="+">0</span><span class="stat-lbl">Partner Organizations</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSPARENCY -->
+<section class="section" style="background:rgba(18,8,16,.03);">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:4rem;">
+      <span class="sec-tag anim up">Transparency</span>
+      <h2 class="sec-title anim up d1">How We Use <em>Your Donation.</em></h2>
+    </div>
+    <div class="grid-4" style="gap:1.5rem;">
+      <div class="g-card tilt anim up text-center"><div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:700;color:var(--rose);line-height:1;">75%</div><h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin:.75rem 0 .5rem;">Programs</h3><p style="font-size:.85rem;color:var(--ink-60);">Directly funds our 7 active programs and field operations.</p></div>
+      <div class="g-card tilt anim up d1 text-center"><div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:700;color:var(--rose);line-height:1;">12%</div><h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin:.75rem 0 .5rem;">Research</h3><p style="font-size:.85rem;color:var(--ink-60);">Powers our Knowledge for Social Change research initiatives.</p></div>
+      <div class="g-card tilt anim up d2 text-center"><div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:700;color:var(--rose);line-height:1;">8%</div><h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin:.75rem 0 .5rem;">Outreach</h3><p style="font-size:.85rem;color:var(--ink-60);">Community awareness campaigns and volunteer coordination.</p></div>
+      <div class="g-card tilt anim up d3 text-center"><div style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:700;color:var(--rose);line-height:1;">5%</div><h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin:.75rem 0 .5rem;">Operations</h3><p style="font-size:.85rem;color:var(--ink-60);">Essential administration, technology, and infrastructure.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><img src="mazanya_logo_icon-2.png" alt="MAZANYA"><span>MAZANYA</span></div><p>Empowering Women, Educating Girls, Supporting Children, and Strengthening Communities.</p><div class="footer-social"><a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a><a href="#" class="social-btn"><i class="fa-brands fa-twitter"></i></a></div></div>
+      <div><h4 class="footer-title">Navigation</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="research.html">Research</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4 class="footer-title">Programs</h4><ul class="footer-links"><li><a href="programs.html#nanaki-jyot">Nanaki Jyot</a></li><li><a href="programs.html#dhiyaan">Dhiyaan Di Udaan</a></li><li><a href="programs.html#swasth-nari">Swasth Nari</a></li><li><a href="programs.html#shakti">Project Shakti</a></li><li><a href="programs.html#enterprise">Her Enterprise</a></li></ul></div>
+      <div><h4 class="footer-title">Contact</h4><ul class="footer-links" style="gap:1rem;"><li><i class="fa-solid fa-envelope" style="color:var(--rose);margin-right:.5rem;"></i> info@mazanyafoundation.org</li><li><i class="fa-solid fa-phone" style="color:var(--rose);margin-right:.5rem;"></i> +91 00000 00000</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Mazanya Foundation. All Rights Reserved.</p><a href="#">Privacy Policy</a></div>
+  </div>
+</footer>
+<script src="js/animations.js"></script>
+<script>
+  document.querySelectorAll('.amount-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));
+      this.classList.add('active');
+      if(this.textContent !== 'Custom'){
+        document.querySelector('input[type=number]').value = this.textContent.replace('₹','').replace(',','');
+      }
+    });
+  });
+</script>
+</body>
+</html>
