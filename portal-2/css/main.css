@@ -40,34 +40,9 @@ body {
   color: var(--dark);
   line-height: 1.5;
   overflow-x: hidden;
-  /* Cursor hidden for custom cursor */
-  cursor: none;
 }
 
-/* Custom Cursor */
-.cursor-dot, .cursor-ring {
-  position: fixed;
-  top: 0; left: 0;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 9999;
-  border-radius: 50%;
-}
-.cursor-dot {
-  width: 8px; height: 8px;
-  background: var(--coral);
-}
-.cursor-ring {
-  width: 40px; height: 40px;
-  border: 1px solid var(--indigo);
-  transition: width 0.3s var(--ease-expo), height 0.3s var(--ease-expo), border-color 0.3s;
-}
-.cursor-ring.hovered {
-  width: 80px; height: 80px;
-  border-color: var(--coral);
-  background: rgba(255, 61, 90, 0.05);
-  backdrop-filter: blur(2px);
-}
+
 
 /* Nav */
 header {

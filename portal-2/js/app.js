@@ -30,40 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   gsap.ticker.lagSmoothing(0, 0);
 
-  // 2. Custom Cursor
-  const dot = document.querySelector('.cursor-dot');
-  const ring = document.querySelector('.cursor-ring');
-  
-  if (dot && ring) {
-    let mouseX = 0, mouseY = 0;
-    let ringX = 0, ringY = 0;
-    
-    window.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      
-      // Dot follows instantly
-      gsap.set(dot, { x: mouseX, y: mouseY });
-    });
-    
-    // Ring follows with easing
-    gsap.ticker.add(() => {
-      ringX += (mouseX - ringX) * 0.15;
-      ringY += (mouseY - ringY) * 0.15;
-      gsap.set(ring, { x: ringX, y: ringY });
-    });
 
-    // Hover effect on links and bento boxes
-    const hoverables = document.querySelectorAll('a, button, .bento-box');
-    hoverables.forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        ring.classList.add('hovered');
-      });
-      el.addEventListener('mouseleave', () => {
-        ring.classList.remove('hovered');
-      });
-    });
-  }
 
   // 3. Hero Animations
   const tl = gsap.timeline();
