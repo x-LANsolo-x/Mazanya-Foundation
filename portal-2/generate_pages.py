@@ -56,7 +56,7 @@ pages = {
     "about.html": {
         "TITLE": "About Us",
         "PAGE_TITLE": "Our <span class='highlight'>Story</span>",
-        "PAGE_DESC": "We believe communities thrive when women are empowered, girls are educated, and children receive opportunities to grow and succeed.",
+        "PAGE_DESC": "Mazanya Foundation was established with a simple yet powerful vision—to create a future where every woman, girl, and child can realize their full potential. The foundation was born from the belief that communities thrive when women are empowered, girls are educated, and children receive opportunities to grow and succeed. As a young organization, we are committed to building impactful programs, meaningful partnerships, and sustainable solutions that address social challenges through innovation, collaboration, and compassion.",
         "CONTENT": """
   <section class="bento-section container">
     <div class="bento-grid">
@@ -73,22 +73,37 @@ pages = {
       <div class="bento-box">
         <span class="bento-tag" style="color: var(--coral);">Core Value</span>
         <h3 class="bento-title">Compassion</h3>
-        <p class="bento-desc">Serving communities with empathy and respect.</p>
+        <p class="bento-desc">We believe in serving communities with empathy and respect.</p>
       </div>
       <div class="bento-box">
         <span class="bento-tag" style="color: var(--indigo);">Core Value</span>
         <h3 class="bento-title">Integrity</h3>
-        <p class="bento-desc">We maintain transparency and accountability.</p>
+        <p class="bento-desc">We maintain transparency and accountability in everything we do.</p>
       </div>
       <div class="bento-box bg-dark">
         <span class="bento-tag">Core Value</span>
         <h3 class="bento-title">Equality</h3>
-        <p class="bento-desc">Equal opportunities regardless of background.</p>
+        <p class="bento-desc">We promote equal opportunities regardless of background.</p>
       </div>
       <div class="bento-box bg-coral">
         <span class="bento-tag">Core Value</span>
         <h3 class="bento-title">Innovation</h3>
-        <p class="bento-desc">Creative solutions for social challenges.</p>
+        <p class="bento-desc">We embrace creative solutions for social challenges.</p>
+      </div>
+      <div class="bento-box bg-dark">
+        <span class="bento-tag">Core Value</span>
+        <h3 class="bento-title">Collaboration</h3>
+        <p class="bento-desc">We believe lasting change is achieved together.</p>
+      </div>
+      <div class="bento-box bg-indigo">
+        <span class="bento-tag">Core Value</span>
+        <h3 class="bento-title">Sustainability</h3>
+        <p class="bento-desc">We focus on long-term impact and community empowerment.</p>
+      </div>
+      <div class="bento-box bento-wide bg-coral">
+        <span class="bento-tag">Founder Message</span>
+        <h3 class="bento-title" style="font-size: 2rem;">Every great movement begins with a vision.</h3>
+        <p class="bento-desc">Mazanya Foundation was established with the aspiration of creating opportunities for women, girls, and children to learn, lead, and thrive. We invite volunteers, institutions, researchers, professionals, and organizations to join us in building a future rooted in dignity, equality, and empowerment. Together, we can transform lives and communities.</p>
       </div>
     </div>
   </section>
@@ -104,37 +119,37 @@ pages = {
       <div class="bento-box bg-indigo">
         <span class="bento-tag">Education</span>
         <h3 class="bento-title">Nanaki Jyot</h3>
-        <p class="bento-desc">Lighting Every Girl’s Future. Focuses on promoting quality education, digital literacy, mentorship, and learning opportunities for girls from all backgrounds.</p>
+        <p class="bento-desc">Nanaki Jyot focuses on promoting quality education, digital literacy, mentorship, and learning opportunities for girls from all backgrounds.</p>
       </div>
       <div class="bento-box">
         <span class="bento-tag" style="color: var(--coral);">Leadership</span>
         <h3 class="bento-title">Dhiyaan Di Udaan</h3>
-        <p class="bento-desc">Every Daughter Deserves Wings. Dedicated to nurturing leadership, confidence, creativity, and future readiness among young girls.</p>
+        <p class="bento-desc">Dhiyaan Di Udaan is dedicated to nurturing leadership, confidence, creativity, and future readiness among young girls.</p>
       </div>
       <div class="bento-box bg-dark">
         <span class="bento-tag">Health</span>
         <h3 class="bento-title">Swasth Nari</h3>
-        <p class="bento-desc">Healthy Women. Strong Communities. Promotes awareness regarding women’s physical, mental, reproductive, and nutritional health.</p>
+        <p class="bento-desc">Swasth Nari promotes awareness regarding women’s physical, mental, reproductive, and nutritional health.</p>
       </div>
       <div class="bento-box bento-wide">
         <span class="bento-tag" style="color: var(--indigo);">Empowerment</span>
         <h3 class="bento-title" style="font-size: 2.5rem;">Project Shakti</h3>
-        <p class="bento-desc">Empowered Women Empower Nations. Supports women through skill development, financial literacy, leadership training, and community engagement initiatives.</p>
+        <p class="bento-desc">Project Shakti supports women through skill development, financial literacy, leadership training, and community engagement initiatives.</p>
       </div>
       <div class="bento-box bg-coral">
         <span class="bento-tag">Enterprise</span>
         <h3 class="bento-title">Her Enterprise</h3>
-        <p class="bento-desc">From Ideas to Independence. Encourages women entrepreneurship through mentorship, business development support, and market access opportunities.</p>
+        <p class="bento-desc">Her Enterprise encourages women entrepreneurship through mentorship, business development support, and market access opportunities.</p>
       </div>
       <div class="bento-box bg-dark">
         <span class="bento-tag">Rights</span>
         <h3 class="bento-title">Nari Samman</h3>
-        <p class="bento-desc">Dignity is Every Woman’s Right. Works toward promoting awareness of women’s rights, equality, safety, and social dignity.</p>
+        <p class="bento-desc">Nari Samman works toward promoting awareness of women’s rights, equality, safety, and social dignity.</p>
       </div>
       <div class="bento-box bento-wide bg-indigo">
         <span class="bento-tag">Child Welfare</span>
         <h3 class="bento-title" style="font-size: 2.5rem;">Project Muskaan</h3>
-        <p class="bento-desc">Every Child Matters. Focuses on child welfare, education support, nutrition awareness, and holistic child development.</p>
+        <p class="bento-desc">Project Muskaan focuses on child welfare, education support, nutrition awareness, and holistic child development.</p>
       </div>
     </div>
   </section>
@@ -149,18 +164,13 @@ pages = {
     <div class="bento-grid">
       <div class="bento-box bento-large bg-coral">
         <span class="bento-tag">Join Us</span>
-        <h3 class="bento-title">Opportunities</h3>
-        <p class="bento-desc">Campus Ambassador, Community Volunteer, Research Volunteer, Content Creator, Graphic Designer, Social Media Volunteer, Fundraising Volunteer, Event Volunteer.</p>
-      </div>
-      <div class="bento-box">
-        <span class="bento-tag" style="color: var(--indigo);">Benefits</span>
-        <h3 class="bento-title">Certificate</h3>
-        <p class="bento-desc">Certificate of Contribution & Recommendation Letter (Performance Based).</p>
+        <h3 class="bento-title">Volunteer Opportunities</h3>
+        <p class="bento-desc">• Campus Ambassador: Represent Mazanya Foundation in your institution.<br>• Community Volunteer: Support awareness and outreach activities.<br>• Research Volunteer: Assist in surveys, studies, and publications.<br>• Content Creator: Develop educational and awareness content.<br>• Graphic Designer: Design social media and campaign creatives.<br>• Social Media Volunteer: Support digital engagement and community building.<br>• Fundraising Volunteer: Help connect donors and partners with our mission.<br>• Event Volunteer: Assist in organizing awareness programs and events.</p>
       </div>
       <div class="bento-box bg-dark">
-        <span class="bento-tag">Benefits</span>
-        <h3 class="bento-title">Network</h3>
-        <p class="bento-desc">Leadership Development & Professional Networking.</p>
+        <span class="bento-tag" style="color: var(--indigo);">Benefits</span>
+        <h3 class="bento-title">Rewards</h3>
+        <p class="bento-desc">• Certificate of Contribution<br>• Leadership Development<br>• Professional Networking<br>• Community Impact Experience<br>• Learning Opportunities<br>• Recommendation Letter (Performance Based)</p>
       </div>
     </div>
   </section>
@@ -194,7 +204,7 @@ pages = {
 """
     },
     "research.html": {
-        "TITLE": "Research & Knowledge",
+        "TITLE": "Research & Knowledge Center",
         "PAGE_TITLE": "Knowledge for <span class='highlight'>Social Change</span>",
         "PAGE_DESC": "Mazanya Foundation believes that meaningful social impact must be supported by evidence, research, and community understanding. Through research, surveys, publications, and knowledge sharing, we aim to identify challenges and develop informed solutions.",
         "CONTENT": """
@@ -203,7 +213,7 @@ pages = {
       <div class="bento-box bento-large bg-dark">
         <span class="bento-tag">Areas</span>
         <h3 class="bento-title">Focus Areas</h3>
-        <p class="bento-desc">Women Empowerment, Girl Child Education, Health and Nutrition, Child Development, Entrepreneurship, Gender Equality, Rural Development, Community Wellbeing, Social Innovation.</p>
+        <p class="bento-desc">• Women Empowerment<br>• Girl Child Education<br>• Health and Nutrition<br>• Child Development<br>• Entrepreneurship<br>• Gender Equality<br>• Rural Development<br>• Community Wellbeing<br>• Social Innovation</p>
       </div>
       <div class="bento-box bento-wide bg-indigo">
         <span class="bento-tag">Join Us</span>
@@ -215,7 +225,7 @@ pages = {
 """
     },
     "survey.html": {
-        "TITLE": "Surveys",
+        "TITLE": "Survey Page",
         "PAGE_TITLE": "Community <span class='coral'>Insights</span> for Better Impact",
         "PAGE_DESC": "Understanding communities is the first step toward creating sustainable solutions. Mazanya Foundation conducts surveys and assessments to identify challenges, understand needs, and develop effective interventions.",
         "CONTENT": """
@@ -236,7 +246,7 @@ pages = {
 """
     },
     "contact.html": {
-        "TITLE": "Contact",
+        "TITLE": "Contact Page",
         "PAGE_TITLE": "Let’s <span class='highlight'>Connect</span>",
         "PAGE_DESC": "We welcome conversations, collaborations, ideas, and opportunities to work together. Whether you are a volunteer, donor, researcher, educational institution, healthcare professional, corporate organization, or community member, we would love to hear from you.",
         "CONTENT": """
@@ -249,6 +259,11 @@ pages = {
         <p class="bento-desc"><strong>Phone</strong><br>+91 XXXXX XXXXX</p>
         <p class="bento-desc"><strong>Address</strong><br>[Registered Office Address]</p>
         <p class="bento-desc"><strong>Working Hours</strong><br>Monday – Saturday<br>9:00 AM – 6:00 PM</p>
+      </div>
+      <div class="bento-box bento-wide bg-coral">
+        <span class="bento-tag">Social</span>
+        <h3 class="bento-title" style="font-size: 2rem;">Connect With Us</h3>
+        <p class="bento-desc">Follow Mazanya Foundation on social media to stay informed about upcoming programs, opportunities, research, and community initiatives. Together, we can build a future filled with opportunity, dignity, and hope.</p>
       </div>
       <div class="bento-box bento-large">
         <form style="display:flex; flex-direction:column; gap:1.5rem; justify-content:center; height:100%;">
