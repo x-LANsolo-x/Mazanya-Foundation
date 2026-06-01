@@ -56,20 +56,31 @@
         </ul>
       </div>
       <div class="anim right">
-        <div class="g-card tilt">
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:2rem;margin-bottom:2rem;">Make a Donation</h3>
-          <div class="donate-amount-grid">
-            <button class="amount-btn active">₹500</button>
-            <button class="amount-btn">₹1,000</button>
-            <button class="amount-btn">₹5,000</button>
-            <button class="amount-btn">Custom</button>
+        <div style="display:flex;flex-direction:column;gap:1.5rem;">
+          <div class="g-card tilt" style="padding:2rem;">
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;margin-bottom:1.5rem;">1. Select Amount</h3>
+            <div class="donate-toggle" style="display:flex;gap:1rem;margin-bottom:1.5rem;">
+              <button class="btn btn-primary" style="flex:1;border-radius:12px;padding:.8rem;">Give Monthly</button>
+              <button class="btn btn-outline" style="flex:1;border-radius:12px;padding:.8rem;">Give Once</button>
+            </div>
+            <div class="donate-amount-grid" style="grid-template-columns:1fr 1fr;gap:.8rem;">
+              <button class="amount-btn active" style="padding:1rem;">₹1,000</button>
+              <button class="amount-btn" style="padding:1rem;">₹3,000</button>
+              <button class="amount-btn" style="padding:1rem;">₹5,000</button>
+              <button class="amount-btn" style="padding:1rem;">Custom</button>
+            </div>
+            <div class="form-group" style="margin-bottom:0;"><input type="number" class="form-control" value="1000" placeholder="Enter amount" style="border-radius:12px;padding:1rem;font-weight:700;"></div>
           </div>
-          <div class="form-group"><label class="form-label">Amount (₹)</label><input type="number" class="form-control" value="500" placeholder="Enter amount"></div>
-          <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-control" placeholder="Your full name"></div>
-          <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-control" placeholder="your@email.com"></div>
-          <div class="form-group"><label class="form-label">Donate Towards</label><select class="form-control"><option>General Fund</option><option>Nanaki Jyot (Education)</option><option>Swasth Nari (Health)</option><option>Her Enterprise (Entrepreneurship)</option><option>Project Muskaan (Child Welfare)</option></select></div>
-          <button class="btn btn-primary mag" style="width:100%;">Proceed to Payment <i class="fa-solid fa-lock"></i></button>
-          <p style="text-align:center;font-size:.8rem;color:var(--ink-60);margin-top:1rem;"><i class="fa-solid fa-shield-halved"></i> 100% Secure. Transparent. Tax Deductible.</p>
+
+          <div class="g-card tilt" style="padding:2rem;">
+            <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;margin-bottom:1.5rem;">2. Donor Details</h3>
+            <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-control" placeholder="Your full name" style="border-radius:12px;"></div>
+            <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-control" placeholder="your@email.com" style="border-radius:12px;"></div>
+            <div class="form-group"><label class="form-label">PAN Number (For 80G)</label><input type="text" class="form-control" placeholder="ABCDE1234F" style="border-radius:12px;"></div>
+            <div class="form-group"><label class="form-label">Donate Towards</label><select class="form-control" style="border-radius:12px;"><option>General Fund</option><option>Nanaki Jyot (Education)</option><option>Swasth Nari (Health)</option><option>Her Enterprise (Entrepreneurship)</option><option>Project Muskaan (Child Welfare)</option></select></div>
+            <button class="btn btn-primary mag" style="width:100%;border-radius:12px;padding:1.2rem;font-size:1.1rem;margin-top:1rem;">Proceed to Payment <i class="fa-solid fa-lock" style="margin-left:.5rem;"></i></button>
+            <p style="text-align:center;font-size:.8rem;color:var(--ink-60);margin-top:1rem;"><i class="fa-solid fa-shield-halved"></i> 100% Secure. Transparent. Tax Deductible.</p>
+          </div>
         </div>
       </div>
     </div>
